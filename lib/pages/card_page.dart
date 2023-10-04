@@ -121,6 +121,48 @@ class CardPage extends StatelessWidget {
               ],
             ),
           ),
+          //Card 3
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(18.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.5),
+                  offset: Offset(4, 4),
+                  blurRadius: 12.0,
+                ),
+                BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-5, -5),
+                  blurRadius: 12.0,
+                ),
+              ],
+            ),
+            padding: EdgeInsets.all(12.0),
+            margin: EdgeInsets.all(10.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    "Maecenas velit enim, sollicitudin ac neque eu, varius finibus arcu. Proin eu feugiat ligula. Pellentesque pharetra vitae lectus sed consequat. Fusce sollicitudin lobortis lacus id accumsan. Nam efficitur dolor est, at suscipit odio pellentesque at. Vestibulum ornare, purus at eleifend auctor, dui justo congue purus, sit amet vulputate dui eros vitae tortor. Sed in posuere felis. Cras eu ornare nisi, vitae tincidunt odio. Etiam condimentum hendrerit sapien non ultrices.",
+                    maxLines: 6,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(15.0),
+                  child: Image.network(
+                    "https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg",
+                    height: 100.0,
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
