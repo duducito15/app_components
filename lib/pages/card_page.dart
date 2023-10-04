@@ -12,6 +12,7 @@ class CardPage extends StatelessWidget {
       ),
       body: Column(
         children: [
+          //Card 1
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -30,7 +31,7 @@ class CardPage extends StatelessWidget {
               ],
             ),
             padding: EdgeInsets.all(12.0),
-            margin: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(10.0),
             child: Column(
               children: [
                 Text(
@@ -66,6 +67,57 @@ class CardPage extends StatelessWidget {
                     ),
                   ),
                 )
+              ],
+            ),
+          ),
+          // Card 2
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(18.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.5),
+                  offset: Offset(4, 4),
+                  blurRadius: 12.0,
+                ),
+                BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-5, -5),
+                  blurRadius: 12.0,
+                ),
+              ],
+            ),
+            padding: EdgeInsets.all(12.0),
+            margin: EdgeInsets.all(10.0),
+            child: Row(
+              children: [
+                Image.asset(
+                  "assets/images/imagex1.png",
+                  height: 120.0,
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text(
+                        "Fiorela Guadalupe de la nieves azules",
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 7.0,
+                      ),
+                      Text(
+                        "Maecenas velit enim, sollicitudin ac neque eu, varius finibus arcu. Proin eu feugiat ligula. Pellentesque pharetra vitae lectus sed consequat. Fusce sollicitudin lobortis lacus id accumsan. Nam efficitur dolor est, at suscipit odio pellentesque at. Vestibulum ornare, purus at eleifend auctor, dui justo congue purus, sit amet vulputate dui eros vitae tortor. ",
+                        maxLines: 4,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
