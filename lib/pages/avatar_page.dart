@@ -13,9 +13,10 @@ class AvatarPage extends StatelessWidget {
         backgroundColor: Colors.amberAccent,
         actions: [
           CircleAvatar(
-            backgroundImage: NetworkImage(
+              /* backgroundImage: NetworkImage(
                 "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg"),
-          ),
+          */
+              ),
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.more_vert),
